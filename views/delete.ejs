@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<h2>Supprimer un client</h2>
+<ul>
+    <% contacts.forEach(contact => { %>
+        <li>
+            <%= contact.nom %> <%= contact.prenom %> - <%= contact.telephone %>
+            <form action="/delete/<%= contact._id %>" method="POST" style="display:inline;">
+                <button type="submit">Supprimer</button>
+            </form>
+        </li>
+    <% }) %>
+</ul>
+</body>
+</html>

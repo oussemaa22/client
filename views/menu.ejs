@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Principal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f2f5;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        form {
+            margin: 10px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu Principal</h1>
+
+        <form action="/add">
+            <button type="submit">Ajouter un client</button>
+        </form>
+        <form action="/delete">
+            <button type="submit">Supprimer un client</button>
+        </form>
+        <form action="/edit">
+            <button type="submit">Modifier un client</button>
+        </form>
+        <form action="/clients">
+            <button type="submit">Afficher tous les clients</button>
+        </form>
+    </div>
+</body>
+</html>

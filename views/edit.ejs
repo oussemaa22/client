@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+<h2>Modifier un client</h2>
+<ul>
+    <% contacts.forEach(contact => { %>
+        <li>
+            <form action="/edit/<%= contact._id %>" method="POST">
+                <input type="text" name="nom" value="<%= contact.nom %>">
+                <input type="text" name="prenom" value="<%= contact.prenom %>">
+                <input type="text" name="telephone" value="<%= contact.telephone %>">
+                <button type="submit">Mettre à jour</button>
+            </form>
+        </li>
+    <% }) %>
+</ul>
+</body>
+</html>

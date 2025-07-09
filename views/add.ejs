@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+<h2>Ajouter un client</h2>
+<form action="/add" method="POST">
+    <input type="text" name="nom" placeholder="Nom" required>
+    <input type="text" name="prenom" placeholder="Prénom" required>
+    <input type="text" name="telephone" placeholder="Téléphone" required>
+    <button type="submit">Ajouter</button>
+</form>
+</body>
+</html>
